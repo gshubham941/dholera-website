@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dholera-bhoomi-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ALLOWED_ORIGIN
+        value: "*"
